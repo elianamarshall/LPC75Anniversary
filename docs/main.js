@@ -99,11 +99,11 @@ const book = document.querySelector("#book");
 // build pages: cover first, then one picture per page side
 const pages = [`
     <div class="anniversary-cover">
-        <img src="../LPCLogo.jpg" alt="LPC Logo">
+        <img src="LPCLogo.jpg" alt="LPC Logo">
         <h1 class="anniversary-title">75th Anniversary</h1>
     </div>
 `].concat(
-    images.map(src => `<img src="../imgs/${src}" alt="" loading="lazy">`)
+    images.map(src => `<img src="imgs/${src}" alt="" loading="lazy">`)
 );
 if (pages.length % 2 !== 0) pages.push("");
 
